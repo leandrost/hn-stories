@@ -30,4 +30,19 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      search_stories: "Search stories..."
+
+  stories:
+    index:
+      title:  "Top 15 Hacker News"
+
+      at: "at"
+      by: "by"
+      comments:
+        one: "1 comment"
+        other: "%{count} comments"
+
+      show_relevant_comments: "Show relevant comments"
+      hide_relevant_comments: "Hide relevant comments"
