@@ -1,23 +1,25 @@
 <h2 class="title is-5 hns-top-stories-title"><%= t('.title') %></h2>
 
 <div class="content">
-  <div class="box">
-    <article>
-      <div class="content">
-        <h3 class="subtitle is-6">Lorem Ipsum</h3>
-        <%= t('.by') %>
-        <small>
-          <a href="#">John Smith</a>
-        </small>
-        <%= t('.at') %>
-        <small>31m</small>
-        <br>
-        <br>
-        <strong><%= t('.comments', count: 171) %></strong>
-        <br>
-        <br>
-        <a href="#">+ <%= t('.show_relevant_comments') %></a>
-      </div>
-    </article>
-  </div>
+  <% @stories.each do |story| %>
+    <div class="box">
+      <article>
+        <div class="content">
+          <h3 class="subtitle is-6"><%= story.title %></h3>
+          <%= t('.by') %>
+          <small>
+            <a href="#"><%= story.by %></a>
+          </small>
+          <%= t('.at') %>
+          <small><%= l Time.at(story.time) %></small>
+          <br>
+          <br>
+          <strong><%= t('.comments', count: story&.kids&.length || 0) %></strong>
+          <br>
+          <br>
+          <a href="#">+ <%= t('.show_relevant_comments') %></a>
+        </div>
+      </article>
+    </div>
+  <% end %>
 </div>
