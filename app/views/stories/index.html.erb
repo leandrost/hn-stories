@@ -6,18 +6,39 @@
       <article>
         <div class="content">
           <h3 class="subtitle is-6"><%= story.title %></h3>
+
           <%= t('.by') %>
           <small>
             <a href="#"><%= story.by %></a>
           </small>
           <%= t('.at') %>
           <small><%= l Time.at(story.time) %></small>
+
           <br>
           <br>
           <strong><%= t('.comments', count: story&.kids&.length || 0) %></strong>
           <br>
           <br>
-          <a href="#">+ <%= t('.show_relevant_comments') %></a>
+          <%= link_to stories_path(show_comments: story.id) do %>
+            + <%= t('.show_relevant_comments') %>
+          <% end %>
+          <br>
+          <br>
+        </div>
+      </article>
+      <article>
+        <div class="content">
+          <% story.comments.each do |comment| %>
+
+            <%= t('.by') %>
+            <small>
+              <a href="#"><%= comment.by %></a>
+            </small>
+            <%= t('.at') %>
+            <small><%= l Time.at(comment.time) %></small>
+
+            <p><%= raw comment.text %></p>
+          <% end %>
         </div>
       </article>
     </div>

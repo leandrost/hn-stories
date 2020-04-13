@@ -36,6 +36,7 @@ group :development, :test do
   # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative
   # to its default testing framework, Minitest.
   gem 'rspec-rails', '~> 4.0'
+  gem 'pry-byebug'
 end
 
 group :development do
