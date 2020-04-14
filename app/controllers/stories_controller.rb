@@ -2,7 +2,7 @@
 
 class StoriesController < ApplicationController
   def index
-    @stories = HackerNews::FetchTopStories.call
+    @stories = list_stories
 
     @stories.each do |story|
       story.comments = []
@@ -22,11 +22,21 @@ class StoriesController < ApplicationController
 
   attr_reader :stories
 
+  def list_stories
+    return HackerNews::SearchStories.call(term: query_params[:q]) if searching?
+
+    HackerNews::FetchTopStories.call
+  end
+
+  def searching?
+    query_params[:q].present?
+  end
+
   def show_comments?(story_id)
     query_params[:show_comments].try(:to_i) == story_id
   end
 
   def query_params
-    params.permit(:show_comments)
+    params.permit(:show_comments, :q)
   end
 end

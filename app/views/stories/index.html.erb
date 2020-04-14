@@ -1,7 +1,19 @@
-<h2 class="title is-5 hns-top-stories-title"><%= t('.title') %></h2>
+<section class="section hns-search-section">
+  <span class="control has-icons-right">
+    <input class="input" type="search" placeholder="<%= t('.search_stories') %>">
+    <span class="icon is-small is-right">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+        <path fill="#ddd" d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"/>
+      </svg>
+    </span>
+  </span>
+</section>
 
-<div class="content">
-  <% @stories.each do |story| %>
+<section class="section">
+  <h2 class="title is-5 hns-top-stories-title"><%= t('.title') %></h2>
+
+  <div class="content">
+    <% @stories.each do |story| %>
     <div class="box">
       <article>
         <div class="content">
@@ -20,7 +32,7 @@
           <br>
           <br>
           <%= link_to stories_path(show_comments: story.id) do %>
-            + <%= t('.show_relevant_comments') %>
+          + <%= t('.show_relevant_comments') %>
           <% end %>
           <br>
           <br>
@@ -30,17 +42,18 @@
         <div class="content">
           <% story.comments.each do |comment| %>
 
-            <%= t('.by') %>
-            <small>
-              <a href="#"><%= comment.by %></a>
-            </small>
-            <%= t('.at') %>
-            <small><%= l Time.at(comment.time) %></small>
+          <%= t('.by') %>
+          <small>
+            <a href="#"><%= comment.by %></a>
+          </small>
+          <%= t('.at') %>
+          <small><%= l Time.at(comment.time) %></small>
 
-            <p><%= raw comment.text %></p>
+          <p><%= raw comment.text %></p>
           <% end %>
         </div>
       </article>
     </div>
-  <% end %>
-</div>
+    <% end %>
+  </div>
+</section>

@@ -30,12 +30,10 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  layouts:
-    application:
-      search_stories: "Search stories..."
-
   stories:
     index:
+      search_stories: "Search stories..."
+
       title:  "Top 15 Hacker News"
 
       at: "at"
