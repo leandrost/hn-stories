@@ -1,24 +1,39 @@
-# README
+## HN Stories
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Stories from Hacker News
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Ruby 2.7
 
-* System dependencies
+## Getting started
 
-* Configuration
+1. Clone this repo:
+```
+git clone git@github.com:leandrost/hn-stories.git
+cd hn-stories
+```
 
-* Database creation
+2. Setup the application:
+```
+bundle config --local path vendor # optional - config bundler to locally install gems on ./vendor
+bin/setup
+```
 
-* Database initialization
+3. Run the application:
+```
+bin/rails server
+```
 
-* How to run the test suite
+## Tests
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+bin/rspec
+```
 
-* Deployment instructions
+## Deploy
 
-* ...
+```
+git push heroku master
+```
