@@ -36,7 +36,18 @@ group :development, :test do
   # Brings the RSpec testing framework to Ruby on Rails as a drop-in alternative
   # to its default testing framework, Minitest.
   gem 'rspec-rails', '~> 4.0'
-  gem 'pry-byebug'
+
+  # Combine 'pry' with 'byebug'. Adds 'step', 'next', 'finish', 'continue' and
+  # 'break' commands to control execution.
+  gem 'pry-byebug', '~> 3.9'
+
+  # Record your test suite's HTTP interactions and replay them during future
+  # test runs for fast, deterministic, accurate tests.
+  gem 'vcr', '~> 5.1'
+
+  # WebMock allows stubbing HTTP requests and setting expectations on HTTP
+  # requests.
+  gem 'webmock', '~> 3.8', '>= 3.8.3'
 end
 
 group :development do

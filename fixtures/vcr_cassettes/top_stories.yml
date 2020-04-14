@@ -1,0 +1,642 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/topstories.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3637'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: "[22859935,22859706,22857551,22856324,22859649,22861403,22860122,22859993,22857082,22854209,22856199,22859820,22857531,22859923,22853081,22858235,22845068,22860604,22855407,22854022,22850195,22855122,22857105,22844663,22857004,22860299,22854332,22857318,22860792,22860784,22861640,22850488,22859674,22858122,22846241,22855633,22856030,22854272,22852646,22855357,22858662,22857384,22854485,22854308,22854120,22843225,22843306,22854693,22852316,22850817,22860008,22857966,22854204,22854303,22849208,22856717,22854218,22852375,22848034,22842547,22848423,22855070,22854475,22852125,22860285,22852982,22848106,22842062,22861292,22847491,22854522,22845629,22840150,22846435,22850386,22846250,22848450,22848296,22857211,22854265,22858994,22852484,22853920,22851622,22854045,22842542,22859673,22861010,22844009,22850657,22842774,22855610,22841269,22855664,22848766,22844458,22859354,22854393,22850025,22847462,22853497,22846296,22857177,22853804,22858975,22854819,22847799,22858035,22844196,22848192,22853443,22850976,22849554,22843140,22850004,22859478,22858154,22843493,22840413,22843085,22854143,22858012,22846782,22847877,22845249,22845668,22848137,22855559,22852498,22848216,22855755,22855362,22844118,22856703,22847092,22853604,22843919,22846586,22850723,22850374,22848721,22853921,22849081,22856260,22841857,22844820,22851323,22850791,22860355,22857299,22855286,22842016,22842383,22846688,22849250,22840728,22849172,22847547,22849747,22840211,22851167,22841601,22844907,22845518,22841164,22845373,22841171,22846414,22847077,22843908,22853605,22855340,22858018,22847079,22846811,22841708,22844520,22849538,22845733,22860214,22843705,22843964,22847429,22851781,22844223,22844597,22841847,22850594,22846693,22847164,22849264,22848861,22856943,22857257,22846787,22854562,22844260,22842190,22843326,22857623,22843097,22855433,22840295,22858918,22841422,22841022,22844685,22844723,22852022,22843691,22840867,22852675,22855195,22852942,22851772,22840869,22851870,22851640,22859938,22851314,22842905,22857232,22855940,22854338,22843533,22850994,22848598,22842281,22842521,22842338,22841232,22843068,22850977,22842847,22842442,22840164,22846851,22842921,22844552,22854302,22848584,22841336,22850053,22853102,22847089,22850972,22854172,22843823,22849878,22840355,22841464,22860682,22846858,22840600,22844788,22846219,22854710,22857985,22855950,22841090,22845765,22847311,22857584,22855600,22846283,22846086,22841071,22846596,22842110,22858335,22847096,22847116,22844343,22851657,22849640,22856910,22849400,22857365,22853900,22849138,22849892,22844099,22853570,22848099,22846235,22841354,22845819,22852171,22851485,22842126,22854745,22841119,22845667,22855459,22847984,22851561,22846408,22852844,22845239,22846670,22851121,22844029,22850083,22843911,22855022,22846094,22853197,22847332,22847814,22848055,22841175,22849456,22841436,22846195,22846666,22842993,22846262,22841098,22840738,22845389,22848396,22845152,22840197,22846716,22847342,22844975,22850132,22852894,22852798,22840476,22848097,22844949,22843204,22841877,22849290,22843411,22846604,22848160,22846353,22848063,22845293,22852693,22840653,22842693,22848948,22851860,22846410,22842724,22841426,22846222,22843430,22849462,22841393,22847128,22849166,22841791,22851003,22845192,22848138,22840524,22843270,22840658,22840474,22843302,22847210,22843168,22841826,22842606,22849109,22848647,22846645,22852423,22846852,22841537,22841399,22845691,22847850,22856581,22847424,22847347,22847345,22847087,22840913,22852378,22840486,22842708,22846391,22846251,22841110,22849407,22842376,22841896,22841463,22844950,22843742,22841460,22840719,22847986,22856522,22851478,22847940,22841846,22846859,22857491]"
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:52 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859935.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '446'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"premek","descendants":97,"id":22859935,"kids":[22860140,22861875,22860276,22860213,22860559,22860236,22860447,22861086,22861925,22860824,22861488,22861082,22861710,22860837,22860652,22861325,22860815,22860159,22861460,22860495,22861880,22861322,22860878],"score":234,"time":1586811817,"title":"Renaming
+        files with mv without typing the name two times","type":"story","url":"https://gist.github.com/premek/6e70446cfc913d3c929d7cdbfe896fef"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:52 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859706.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '358'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"scarybeast","descendants":43,"id":22859706,"kids":[22860072,22859918,22860167,22860619,22861773,22861555,22860303,22861279,22860145,22860769,22860099,22860296,22860292,22860361],"score":99,"time":1586810010,"title":"Clocking
+        a 6502 simulator to 15GHz","type":"story","url":"https://scarybeastsecurity.blogspot.com/2020/04/clocking-6502-to-15ghz.html"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:53 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22857551.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '654'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"pcr910303","descendants":143,"id":22857551,"kids":[22858254,22862007,22859409,22859613,22861976,22858315,22858222,22861015,22859437,22859030,22861505,22858990,22860549,22859957,22861615,22860811,22859281,22860207,22859278,22858897,22859798,22859573,22858098,22858833,22859002,22860957,22858912,22859152,22858840,22858968,22859246,22859318,22859062,22859103,22858630,22859326,22861043,22859554,22859810,22859591,22861174,22859095,22859225,22858816,22859713,22859411,22857919,22858234],"score":241,"time":1586797091,"title":"Malleable
+        Systems: Software must be as easy to change as it is to use it","type":"story","url":"https://malleable.systems/"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:54 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22856324.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '554'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"lladnar","descendants":294,"id":22856324,"kids":[22858714,22857056,22856993,22859493,22859231,22859108,22858858,22857019,22861728,22857302,22856940,22857349,22861363,22860354,22860196,22857145,22857071,22859580,22857437,22860176,22857038,22859442,22860882,22856506,22859429,22860227,22858836,22857228,22861117,22857125,22859534],"score":313,"time":1586789425,"title":"As
+        YouTube traffic soars, YouTubers say pay is plummeting","type":"story","url":"https://onezero.medium.com/as-youtube-traffic-soars-youtubers-say-pay-is-plummeting-30dc1ba444db"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:55 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859649.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '502'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6Imp1bXByaXRlIiwiZGVzY2VuZGFudHMiOjkyLCJpZCI6MjI4NTk2NDksImtpZHMiOlsyMjg1OTkyNCwyMjg1OTg0MCwyMjg2MDAxNCwyMjg2MDY0NSwyMjg2MDI1MSwyMjg2MDE0NiwyMjg2MDc3NiwyMjg1OTgxNiwyMjg2MDIzNywyMjg1OTkzMywyMjg2MDMwOSwyMjg2MTk2OSwyMjg2MDE2MCwyMjg2MTEzMywyMjg1OTg0OSwyMjg2MDcyNSwyMjg2MDAyOSwyMjg2MDkzMywyMjg1OTg3MCwyMjg2MDE3NSwyMjg2MTg0MCwyMjg2MDg2NywyMjg2MDMxNiwyMjg2MDIyMywyMjg1OTk0NSwyMjg2MDUxMywyMjg1OTkzMiwyMjg2MDE1MiwyMjg2MDE2NiwyMjg1OTk4MywyMjg2MDY5NCwyMjg2MDQ2MF0sInNjb3JlIjoxMzYsInRpbWUiOjE1ODY4MDk2MTksInRpdGxlIjoi4oCcU2VxdWVs4oCdIHRvIHRoZSBtaWxsaW9uIGRvbGxhciBob21lcGFnZSB1c2luZyBXZWJHTCIsInR5cGUiOiJzdG9yeSIsInVybCI6Imh0dHBzOi8vbWlsbGlvbmRvbGxhcm1ldHJvcG9saXMuY29tLyMifQ==
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:56 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22861403.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '343'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"mighty-fine","descendants":16,"id":22861403,"kids":[22861992,22861947,22861881,22861980,22861935,22861788,22861783,22861780],"score":70,"time":1586821318,"title":"Fear
+        and beauty: two weeks living with Covid-19","type":"story","url":"https://joshuaweissburg.com/2020/04/12/fear-and-beauty-two-weeks-living-with-covid-19/?utm_source=yc"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:56 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22860122.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '180'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"adamsurak","descendants":2,"id":22860122,"kids":[22861983,22861988],"score":43,"time":1586812753,"title":"Honeypot
+        as a Service","type":"story","url":"https://haas.nic.cz/"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:57 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859993.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '241'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"coorde","descendants":11,"id":22859993,"kids":[22860710,22861939,22860729],"score":56,"time":1586812166,"title":"Magicpak:
+        Build minimal Docker images without static linking","type":"story","url":"https://github.com/coord-e/magicpak"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:58 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22857082.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:44:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '359'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"sciurus","descendants":70,"id":22857082,"kids":[22858239,22861946,22859118,22858267,22859954,22858704,22859029,22859551,22859402,22861661,22859353,22859523,22859107,22859427,22859154,22860797,22859181,22859550,22858874,22859184,22859300],"score":187,"time":1586794342,"title":"Build
+        versus Buy","type":"story","url":"https://lethain.com/build-vs-buy/"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:44:59 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22854209.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '398'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"angristan","descendants":67,"id":22854209,"kids":[22861258,22859012,22860304,22859969,22861598,22857428,22859799,22860942,22860751,22861604,22861891,22860333,22861594,22858879,22860219,22860702,22861625,22860773,22860087,22860538,22857988,22854244],"score":144,"time":1586768455,"title":"NextDNS
+        is my new favourite DNS service","type":"story","url":"https://angristan.xyz/2020/04/nextdns/"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:00 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22856199.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '354'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"grhmc","descendants":94,"id":22856199,"kids":[22858208,22857135,22856973,22858558,22859043,22860401,22857413,22858802,22857964,22857606,22858217,22859535,22856724,22859355],"score":296,"time":1586788597,"title":"Erase
+        your darlings: immutable infrastructure for mutable systems","type":"story","url":"https://grahamc.com/blog/erase-your-darlings"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:01 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859820.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '266'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"leonagano","descendants":16,"id":22859820,"kids":[22861975,22861067,22861711,22861264],"score":48,"time":1586810981,"title":"Olive
+        tree disease across Europe ''could costs billions''","type":"story","url":"https://www.bbc.com/news/science-environment-52234561"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:02 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22857531.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:02 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '326'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"fortran77","descendants":28,"id":22857531,"kids":[22860975,22859646,22861759,22861179,22861502,22859855,22861833,22859525,22857599,22857740,22857892],"score":167,"time":1586796938,"title":"My
+        Code Was in the Original Terminator Movie","type":"story","url":"https://twitter.com/ThrillScience/status/1249742678532620293"}'
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:02 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22859923.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '286'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6ImtlbnMiLCJkZXNjZW5kYW50cyI6MywiaWQiOjIyODU5OTIzLCJraWRzIjpbMjI4NjEyMDIsMjI4NjE4MjIsMjI4NjEzNjFdLCJzY29yZSI6NDUsInRpbWUiOjE1ODY4MTE3NDcsInRpdGxlIjoiRGVjb25zdHJ1Y3RpbmcgU2VnYSdzIFN5c3RlbSAxNiBTZWN1cml0eSDigJMgUGFydCAyIiwidHlwZSI6InN0b3J5IiwidXJsIjoiaHR0cHM6Ly9hcmNhZGVoYWNrZXIuYmxvZ3Nwb3QuY29tLzIwMjAvMDQvZGVjb25zdHJ1Y3Rpbmctc2VnYXMtc3lzdGVtLTE2LXNlY3VyaXR5LXBhcnQyLmh0bWwifQ==
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:03 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22853081.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 14 Apr 2020 01:45:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '208'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6Imx1cnF1ZXIiLCJkZXNjZW5kYW50cyI6MSwiaWQiOjIyODUzMDgxLCJraWRzIjpbMjI4NTMwOTNdLCJzY29yZSI6OCwidGltZSI6MTU4Njc1MDcwOCwidGl0bGUiOiJTaG93IEhOOiBDeWNlbGwyZC5jb20g4oCTIEEgQ2VsbHVsYXIgTW9ycGhvZ2VuZXNpcyBTYW5kYm94IiwidHlwZSI6InN0b3J5IiwidXJsIjoiaHR0cDovL3d3dy5jeWNlbGwyZC5jb20ifQ==
+    http_version: null
+  recorded_at: Tue, 14 Apr 2020 01:45:04 GMT
+recorded_with: VCR 5.1.0
