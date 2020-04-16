@@ -12,6 +12,22 @@
 <section class="section">
   <h2 class="title is-5 hns-top-stories-title"><%= t('.title') %></h2>
 
+  <hn-search-results :id="<%= @search_id.to_json %>" inline-template>
+    <div>
+
+      <div class="box" v-for="story in stories">
+        <article>
+          <div class="content">
+            <h3 class="subtitle is-6">
+              {{story.title}}
+            </h3>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </hn-search-results>
+
   <div class="content">
     <% @stories.each do |story| %>
     <div class="box">

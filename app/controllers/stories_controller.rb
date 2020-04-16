@@ -2,6 +2,14 @@
 
 class StoriesController < ApplicationController
   def index
+    @stories = []
+
+    if searching?
+      search_job = SearchStoryJob.perform_later(term: query_params[:q])
+      @search_id = search_job.job_id
+      return
+    end
+
     @stories = list_stories
 
     @stories.each do |story|
@@ -23,7 +31,6 @@ class StoriesController < ApplicationController
   attr_reader :stories
 
   def list_stories
-    return HackerNews::SearchStories.call(term: query_params[:q]) if searching?
 
     HackerNews::FetchTopStories.call
   end

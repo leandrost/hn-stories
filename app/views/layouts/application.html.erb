@@ -6,9 +6,10 @@
     <%= csp_meta_tag %>
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'app', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="has-navbar-fixed-top">
+  <body class="has-navbar-fixed-top" data-environment="<%= Rails.env %>">
     <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" target="_blank" href="https://news.ycombinator.com/">
@@ -18,6 +19,8 @@
       </div>
     </nav>
 
-    <%= yield %>
+    <section data-behavior="vue">
+      <%= yield %>
+    </section>
   </body>
 </html>
