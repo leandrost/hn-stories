@@ -7,22 +7,22 @@ describe HackerNews::SearchStories do
     subject(:service) { described_class.new(term: 'foo') }
 
     let(:item42) { Hashie::Mash.new(id: 42, type: 'story', title: 'some foo') }
-    let(:item43) { Hashie::Mash.new(id: 41, type: 'story', title: 'fooooooo') }
-    let(:item44) { Hashie::Mash.new(id: 43, type: 'story', title: 'foo bar') }
-    let(:item45) { Hashie::Mash.new(id: 44, type: 'story', title: 'bar foo') }
+    let(:item43) { Hashie::Mash.new(id: 43, type: 'story', title: 'fooooooo') }
+    let(:item44) { Hashie::Mash.new(id: 44, type: 'story', title: 'foo bar') }
+    let(:item45) { Hashie::Mash.new(id: 45, type: 'story', title: 'bar foo') }
 
     let(:items) { [item42, item43, item44, item45] }
+    let(:item_ids) { items.map(&:id) }
 
     before :each do
-      max_item_id = items.map(&:id).max
+      allow(service.client).to receive(:get)
+        .with('newstories.json')
+        .and_return(item_ids)
 
-      allow(service.client).to receive(:max_item).and_return(max_item_id)
-      allow(service.client).to receive(:item)
+      fetch_items = allow(HackerNews::FetchItems).to receive(:call)
 
       items.each do |item|
-        allow(service.client).to receive(:item)
-          .with(item.id)
-          .and_return(item)
+        fetch_items.and_yield(item)
       end
     end
 
@@ -30,65 +30,40 @@ describe HackerNews::SearchStories do
       expect(service.call).to eq [item45, item44, item42]
     end
 
-    context 'with too much stories' do
-      let(:items) do
-        15.times.map do |id|
-          Hashie::Mash.new(id: id, type: 'story', title: 'bar foo')
-        end
-      end
+    it 'fetches items limiting by 10' do
+      service.call
+      expect(HackerNews::FetchItems).to have_received(:call).with(
+        ids: item_ids,
+        type: 'story',
+        limit: 10
+      )
+    end
 
-      it 'fetches stories limited by 10' do
-        expect(service.call.size).to eq 10
+    context 'with block' do
+      it 'executes given block on each story found' do
+        block_stub = double(:block)
+        allow(block_stub).to receive(:call)
+
+        service.call do |story|
+          block_stub.call(story)
+        end
+
+        expect(block_stub).to have_received(:call).with(item45).once
+        expect(block_stub).to have_received(:call).with(item44).once
+        expect(block_stub).to have_received(:call).with(item42).once
       end
     end
 
     context 'when not found a term' do
-      skip 'TODO'
-    end
-
-    context 'when hn api retrieve non story items' do
       let(:items) do
         [
-          Hashie::Mash.new(id: 13, type: 'job',   title: 'foo'),
-          Hashie::Mash.new(id: 42, type: 'story', title: 'foo'),
-          Hashie::Mash.new(id: 23, type: 'show',  title: 'foo')
+          Hashie::Mash.new(id: 13, type: 'job',   title: 'bar'),
+          Hashie::Mash.new(id: 42, type: 'story', title: 'bar')
         ]
       end
 
-      it 'fetches only story items' do
-        expect(service.call).to contain_exactly(
-          have_attributes(id: 42)
-        )
-      end
-    end
-
-    context 'when hn api retrieve `dead` items' do
-      let(:items) do
-        [
-          Hashie::Mash.new(id: 13, type: 'story', dead: 'foo'),
-          Hashie::Mash.new(id: 42, type: 'story', title: 'foo')
-        ]
-      end
-
-      it 'fetches only non `dead` items' do
-        expect(service.call).to contain_exactly(
-          have_attributes(id: 42)
-        )
-      end
-    end
-
-    context 'when hn api retrieve `deleted` items' do
-      let(:items) do
-        [
-          Hashie::Mash.new(id: 13, type: 'story', deleted: true),
-          Hashie::Mash.new(id: 42, type: 'story', title: 'foo')
-        ]
-      end
-
-      it 'fetches only non `deleted` items' do
-        expect(service.call).to contain_exactly(
-          have_attributes(id: 42)
-        )
+      it 'retuns a empty array' do
+        expect(service.call).to be_empty
       end
     end
   end

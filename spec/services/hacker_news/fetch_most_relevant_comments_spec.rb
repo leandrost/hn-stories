@@ -11,15 +11,19 @@ describe HackerNews::FetchMostRelevantComments do
         Hashie::Mash.new(id: 1, text: 'nice'),
         Hashie::Mash.new(
           id: 2,
-          text: %(
-          Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-          )
+          text: relevant_text
         ),
         Hashie::Mash.new(id: 3, text: 'cool')
       ]
+    end
+
+    let(:relevant_text) do
+      %(
+        Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      )
     end
 
     let(:comment_ids) { comments.map(&:id) }
@@ -42,18 +46,13 @@ describe HackerNews::FetchMostRelevantComments do
           Hashie::Mash.new(id: 1, deleted: true),
           Hashie::Mash.new(
             id: 2,
-            text: %(
-          Lorem ipsum dolor sit amet, consectetur adipisicing
-          elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.
-          )
+            text: relevant_text
           ),
           Hashie::Mash.new(id: 3, text: 'cool')
         ]
       end
 
-      it 'ignores delete comments' do
+      it 'ignores deleted comments' do
         expect(service.call).to eq([comments.second])
       end
     end
@@ -64,24 +63,21 @@ describe HackerNews::FetchMostRelevantComments do
           Hashie::Mash.new(id: 1, deleted: true),
           Hashie::Mash.new(
             id: 2,
-            text: %(
-            Lorem ipsum dolor sit amet, consectetur adipisicing
-            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua.
-          )
+            text: relevant_text
           ),
           Hashie::Mash.new(
             id: 3,
             text: %(
-            <strong> Lorem <strong> <span> ipsum dolor sit amet </span>
+            <br><br> <br> <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br>
+            <br> <br> <br> <br> <br> <br> <br> <br>
             <strong> Lorem <strong> <span> ipsum dolor/span>
             )
           )
         ]
       end
 
-      it 'ignores delete comments' do
-        skip 'TODO'
+      it 'ignores tags inside the text' do
         expect(service.call).to eq([comments.second])
       end
     end

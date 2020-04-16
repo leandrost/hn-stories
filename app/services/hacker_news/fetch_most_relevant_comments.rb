@@ -13,7 +13,7 @@ module HackerNews
     def call
       ids.map do |id|
         comment = client.item(id)
-        next if comment.deleted
+        next if comment.deleted || comment.dead
 
         comment if relevant_comment?(comment)
       end.compact
@@ -24,7 +24,8 @@ module HackerNews
     attr_reader :ids
 
     def relevant_comment?(comment)
-      word_count = comment.text&.split&.length
+      text = ActionView::Base.full_sanitizer.sanitize(comment.text)
+      word_count = text&.split&.size
       word_count >= WORDS_COUNT
     end
   end

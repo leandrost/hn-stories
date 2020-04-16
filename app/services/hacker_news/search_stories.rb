@@ -9,19 +9,22 @@ module HackerNews
     end
 
     def call
-      stories_ids.each do |id|
-        story = fetch_story(id)
-        stories << story if match_search?(story&.title)
-        break if stories.size == STORIES_LIMIT
+      fetch_args = { ids: stories_ids, type: 'story', limit: STORIES_LIMIT }
+
+      FetchItems.call(fetch_args) do |story|
+        next unless match_search?(story.title)
+
+        yield(story) if block_given?
+        stories << story
       end
 
-      stories
+      stories.sort_by(&:id).reverse!
     end
 
     private
 
     STORIES_LIMIT = 10
-    STORIES_PER_PAGE = 1000
+    SEARCH_SIZE = 1000
 
     attr_reader :term
 
@@ -29,25 +32,8 @@ module HackerNews
       @stories ||= []
     end
 
-    def fetch_story(id)
-      item = client.item(id)
-      return if item.blank? || item.type != 'story' || item.deleted || item.dead
-
-      item
-    end
-
     def stories_ids
-      (start_id..max_id).to_a.reverse
-    end
-
-    def start_id
-      return 1 if max_id < STORIES_PER_PAGE
-
-      max_id - STORIES_PER_PAGE
-    end
-
-    def max_id
-      client.max_item
+      client.get('newstories.json')
     end
 
     def match_search?(title)

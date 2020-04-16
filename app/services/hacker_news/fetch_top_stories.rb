@@ -5,15 +5,11 @@ module HackerNews
     include ApiClient
 
     def call
-      top_stories_ids.each do |id|
-        story = client.item(id)
-        next unless story.type == 'story'
-
-        stories << story
-        break if stories.size == STORIES_LIMIT
-      end
-
-      stories.sort_by(&:id).reverse!
+      FetchItems.call(
+        ids: top_stories_ids,
+        type: 'story',
+        limit: STORIES_LIMIT
+      ).sort_by(&:id).reverse!
     end
 
     private

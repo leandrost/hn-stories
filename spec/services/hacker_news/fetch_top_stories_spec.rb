@@ -14,15 +14,14 @@ describe HackerNews::FetchTopStories do
       ]
     end
 
+    let(:stories_ids) { stories.map(&:id) }
+
     before :each do
       allow(service.client).to receive(:top_stories)
-        .and_return(stories.map(&:id))
+        .and_return(stories_ids)
 
-      stories.each do |item|
-        allow(service.client).to receive(:item)
-          .with(item.id)
-          .and_return(item)
-      end
+      allow(HackerNews::FetchItems).to receive(:call)
+        .and_return(stories)
     end
 
     it 'fetches stories sorted by most recent' do
@@ -33,33 +32,10 @@ describe HackerNews::FetchTopStories do
       ]
     end
 
-    context 'when hn api retrieve non story items' do
-      let(:stories) do
-        [
-          Hashie::Mash.new(id: 42,  type: 'story'),
-          Hashie::Mash.new(id: 171, type: 'job'),
-          Hashie::Mash.new(id: 71,  type: 'show')
-        ]
-      end
-
-      it 'does not fetches HN items that are not stories' do
-        expect(service.call).not_to include(
-          have_attributes(id: 171),
-          have_attributes(id: 71)
-        )
-      end
-    end
-
-    context 'with too much stories' do
-      let(:stories) do
-        25.times.map do |id|
-          Hashie::Mash.new(id: id, type: 'story', title: 'bar foo')
-        end
-      end
-
-      it 'fetches stories limited by 15' do
-        expect(service.call.size).to eq 15
-      end
+    it 'fetches stories limited by 15' do
+      service.call
+      expect(HackerNews::FetchItems).to have_received(:call)
+        .with(ids: stories_ids, type: 'story', limit: 15)
     end
   end
 end
