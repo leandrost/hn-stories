@@ -5,8 +5,8 @@ RSpec.describe SearchStoryJob, type: :job do
   describe '.perform_later' do
     subject(:job) { described_class.new }
 
-    let(:story42) { Hashie::Mash.new(id: 42) }
-    let(:story41) { Hashie::Mash.new(id: 41) }
+    let(:story42) { Hashie::Mash.new(id: 42, time: 158_701_131_2) }
+    let(:story41) { Hashie::Mash.new(id: 41, time: 158_701_131_2) }
 
     let(:stream) { 'search:guid' }
 
@@ -24,11 +24,11 @@ RSpec.describe SearchStoryJob, type: :job do
 
       expect(ActionCable.server).to have_received(:broadcast).with(
         stream,
-        story42.to_json
+        StoryPresenter.new(story42).to_json
       )
       expect(ActionCable.server).to have_received(:broadcast).with(
         stream,
-        story41.to_json
+        StoryPresenter.new(story41).to_json
       )
     end
   end

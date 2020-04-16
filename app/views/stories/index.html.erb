@@ -1,75 +1,26 @@
 <section class="section hns-search-section">
-  <span class="control has-icons-right">
-    <input class="input" type="search" placeholder="<%= t('.search_stories') %>">
-    <span class="icon is-small is-right">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
-        <path fill="#ddd" d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"/>
-      </svg>
+  <%= form_with url: root_path, method: :get do |f| %>
+    <span class="control has-icons-right">
+      <%= f.text_field :q, type: 'search', class: 'input', placeholder: t('.search_stories') %>
+      <span class="icon is-small is-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+          <path fill="#ddd" d="M23.822 20.88l-6.353-6.354c.93-1.465 1.467-3.2 1.467-5.059.001-5.219-4.247-9.467-9.468-9.467s-9.468 4.248-9.468 9.468c0 5.221 4.247 9.469 9.468 9.469 1.768 0 3.421-.487 4.839-1.333l6.396 6.396 3.119-3.12zm-20.294-11.412c0-3.273 2.665-5.938 5.939-5.938 3.275 0 5.94 2.664 5.94 5.938 0 3.275-2.665 5.939-5.94 5.939-3.274 0-5.939-2.664-5.939-5.939z"/>
+        </svg>
+      </span>
     </span>
-  </span>
+  <% end %>
 </section>
 
-<section class="section">
-  <h2 class="title is-5 hns-top-stories-title"><%= t('.title') %></h2>
-
-  <hn-search-results :id="<%= @search_id.to_json %>" inline-template>
-    <div>
-
-      <div class="box" v-for="story in stories">
-        <article>
-          <div class="content">
-            <h3 class="subtitle is-6">
-              {{story.title}}
-            </h3>
-          </div>
-        </article>
-      </div>
-
-    </div>
-  </hn-search-results>
-
-  <div class="content">
-    <% @stories.each do |story| %>
-    <div class="box">
-      <article>
-        <div class="content">
-          <h3 class="subtitle is-6"><%= story.title %></h3>
-
-          <%= t('.by') %>
-          <small>
-            <a href="#"><%= story.by %></a>
-          </small>
-          <%= t('.at') %>
-          <small><%= l Time.at(story.time) %></small>
-
-          <br>
-          <br>
-          <strong><%= t('.comments', count: story&.kids&.length || 0) %></strong>
-          <br>
-          <br>
-          <%= link_to stories_path(show_comments: story.id) do %>
-          + <%= t('.show_relevant_comments') %>
-          <% end %>
-          <br>
-          <br>
-        </div>
-      </article>
-      <article>
-        <div class="content">
-          <% story.comments.each do |comment| %>
-
-          <%= t('.by') %>
-          <small>
-            <a href="#"><%= comment.by %></a>
-          </small>
-          <%= t('.at') %>
-          <small><%= l Time.at(comment.time) %></small>
-
-          <p><%= raw comment.text %></p>
-          <% end %>
-        </div>
-      </article>
-    </div>
-    <% end %>
+<% if @search_id  %>
+<hn-search-results :id="<%= @search_id.to_json %>" inline-template>
+  <div>
+    <%= render 'story', title: t('.searching', term: params[:q]), story: OpenStruct.new(most_relevant_comments: []), v: true %>
   </div>
-</section>
+</hn-search-results>
+<% end %>
+
+<div class="content">
+  <% @stories.each do |story| %>
+  <%= render 'story', story: story, title: t('.title')  %>
+  <% end %>
+</div>

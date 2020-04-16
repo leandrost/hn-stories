@@ -1,0 +1,1445 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/topstories.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:34 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3295'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: "[22885621,22878515,22884375,22883429,22882260,22880898,22878136,22884061,22885819,22884510,22884831,22878400,22871124,22876961,22885346,22881808,22884586,22871417,22864316,22879448,22881130,22864109,22879347,22884299,22879771,22878399,22867627,22881384,22877355,22885892,22875094,22879185,22885689,22879425,22884993,22882148,22883280,22880335,22863507,22876554,22870180,22875106,22879361,22878197,22884652,22884736,22875465,22879678,22873298,22871331,22865357,22883240,22876755,22882482,22883242,22878146,22880931,22869909,22882181,22864476,22872711,22879651,22885283,22870105,22871180,22867775,22867960,22880320,22883114,22883502,22876241,22884833,22870667,22877104,22876108,22872301,22882655,22866714,22866284,22862053,22871158,22867767,22883824,22859099,22883071,22876187,22885123,22881574,22879567,22874863,22870905,22859935,22883595,22863536,22870273,22877890,22869787,22883503,22859698,22863528,22877126,22874621,22873578,22878331,22860682,22870912,22884072,22881364,22881786,22875937,22881726,22869481,22863673,22883838,22883270,22875347,22881879,22863491,22863133,22868286,22878636,22866767,22883546,22877711,22882688,22885329,22869365,22859695,22861731,22875166,22877788,22873722,22864573,22861977,22860859,22865048,22877228,22864029,22861942,22874176,22862736,22876273,22879262,22867375,22867503,22884738,22864188,22882421,22873169,22880686,22865526,22881483,22864795,22859820,22868674,22861129,22862413,22861640,22859649,22880762,22882767,22881104,22871502,22884419,22863327,22867724,22869284,22859706,22865360,22862594,22876351,22861585,22868216,22881150,22859993,22861486,22878024,22874717,22882769,22879463,22866789,22880870,22861452,22874631,22880501,22880496,22867062,22863484,22868054,22868441,22881687,22879703,22867695,22874476,22874662,22863062,22866858,22879275,22875234,22861403,22860122,22876422,22872543,22881768,22873431,22875170,22868270,22859923,22882936,22877320,22873403,22878186,22862609,22883582,22883477,22873808,22868433,22874675,22864853,22872420,22881051,22871566,22861645,22873187,22882634,22871261,22879334,22872491,22881460,22882460,22860299,22867447,22864294,22862698,22868700,22874259,22864827,22865028,22863565,22875701,22878823,22880305,22866635,22877629,22862891,22860784,22864465,22870073,22881508,22864985,22859940,22867755,22864859,22859378,22864572,22864586,22874346,22872608,22873368,22861467,22882348,22860604,22882328,22870990,22873236,22872955,22872743,22875167,22862066,22877174,22871382,22864429,22872103,22864194,22875264,22872494,22869667,22876485,22870719,22865100,22872392,22874243,22865386,22860008,22873852,22868536,22870270,22859674,22873687,22862908,22869225,22865127,22876556,22864522,22866238,22874894,22875163,22871488,22874099,22876581,22864305,22858994,22860285,22863587,22870754,22870030,22865219,22869805,22870225,22859354,22875345,22870388,22867980,22858975,22867374,22863046,22871421,22865599,22873042,22864976,22861095,22864401,22875708,22859690,22865940,22859454,22859673,22868580,22863766,22868166,22861292,22864598,22871003,22870618,22869639,22862676,22865459,22868036,22872473,22862871,22859478,22870969,22870722,22861853,22861010,22871065,22867842,22862748,22863213,22862003,22862568,22874266,22861498,22860355,22861838,22858918,22872626,22870726,22863319,22859938,22867707,22868645,22878506,22876558,22878524,22870975]"
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:34 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885621.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:35 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '470'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"adelHBN","descendants":66,"id":22885621,"kids":[22885814,22885799,22885867,22885827,22885979,22885874,22885879,22885792,22885765,22885969,22885871,22885852,22885855,22885791,22885836,22885947,22885748,22885749,22885787],"score":88,"time":1587006263,"title":"World
+        economy expected to contract by 3%. In 2009 it contracted 0.1%.","type":"story","url":"https://www.wsj.com/articles/coronavirus-afflicted-global-economy-is-almost-certainly-in-recession-11586867402"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:35 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22878515.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:36 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1902'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"CoachRufus87","descendants":1200,"id":22878515,"kids":[22885418,22879211,22879042,22878765,22878685,22878569,22882357,22878676,22880443,22878579,22878895,22879524,22885702,22885728,22879147,22882320,22878575,22878780,22881448,22878710,22878677,22881084,22879904,22880615,22880138,22878861,22879375,22883108,22878633,22878860,22879306,22878708,22880015,22879039,22885701,22882654,22878957,22878707,22878690,22879047,22879015,22885609,22884646,22879368,22878675,22881556,22885276,22878851,22884526,22880145,22880925,22878650,22882293,22880065,22879484,22879069,22880930,22883294,22885397,22883572,22878838,22885361,22883713,22878716,22879786,22880519,22878654,22879118,22879546,22883592,22880419,22880230,22885336,22884923,22884746,22878687,22879685,22883961,22884054,22880556,22878627,22881063,22884267,22883661,22882781,22885222,22880783,22880954,22878797,22881728,22880833,22885651,22882753,22880168,22883151,22883535,22880031,22879386,22878988,22879596,22880965,22879979,22879300,22880896,22883180,22879137,22884475,22878774,22879638,22879009,22879045,22881780,22878802,22880841,22878886,22878734,22880629,22879271,22880782,22885064,22880102,22881523,22880276,22880479,22884224,22881067,22879964,22879586,22883578,22878680,22882319,22879560,22882893,22878898,22880816,22881233,22879050,22883702,22878794,22879314,22880165,22879959,22880466,22881965,22880338,22879273,22883769,22882444,22883777,22878958,22879225,22883656,22883123,22878751,22880208,22880389,22878824,22879341,22878908,22881828,22880192,22880370,22880296,22880173,22880092,22880575,22878875,22879111,22880237,22881098,22879145,22883182,22880240,22882224,22879374,22878766,22879892,22879751,22878584,22883426,22881259,22878811,22881194,22878597,22878572],"score":1249,"time":1586962999,"title":"New
+        iPhone SE","type":"story","url":"https://www.apple.com/newsroom/2020/04/iphone-se-a-powerful-new-smartphone-in-a-popular-design/"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:36 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22884375.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:37 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '419'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"prophetjohn","descendants":85,"id":22884375,"kids":[22885567,22885401,22885515,22886010,22885171,22885228,22885199,22885629,22885139,22885535,22885446,22885258,22885644,22885626,22885308,22885427],"score":173,"time":1586993327,"title":"Google
+        to Slow Hiring for Rest of 2020","type":"story","url":"https://www.bloomberg.com/news/articles/2020-04-15/google-to-slow-hiring-for-rest-of-2020-ceo-pichai-tells-staff"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:37 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22883429.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:38 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '312'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"escot","descendants":34,"id":22883429,"kids":[22884735,22884456,22884533,22885809,22884306,22884395,22885240,22885109,22884577,22884098],"score":231,"time":1586986937,"title":"Falcon
+        is a free, open-source SQL editor with inline data visualization","type":"story","url":"https://github.com/plotly/falcon"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:38 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22882260.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:39 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '408'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"aloukissas","descendants":138,"id":22882260,"kids":[22883855,22882805,22882888,22885383,22882483,22883841,22884082,22883918,22883138,22883854,22883223,22882747,22885821,22885185,22885463,22882751,22883870,22885286,22885037,22883696,22882578,22883018,22883766,22884659,22883230,22884364],"score":341,"time":1586980468,"title":"Bouncing
+        DVD Logo","type":"story","url":"https://www.bouncingdvdlogo.com/"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:39 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22880898.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:40 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '517'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"wallflower","descendants":144,"id":22880898,"kids":[22881610,22883122,22881272,22881714,22885078,22885024,22881180,22883970,22881772,22882354,22881454,22883472,22884547,22881424,22885399,22885474,22882085,22883178,22882364,22881583,22884006,22881305],"score":430,"time":1586973637,"title":"Former
+        CEO of RadioShack now an ER doctor on frontlines of Covid-19 fight","type":"story","url":"https://nationalpost.com/news/canada/second-act-former-ceo-of-radioshack-now-an-er-doctor-on-frontlines-of-covid-19-fight"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:41 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22878136.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '699'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"jgrahamc","descendants":200,"id":22878136,"kids":[22884715,22883548,22879807,22882787,22878763,22880710,22883363,22879682,22885925,22879624,22884725,22881202,22885501,22881427,22885795,22881440,22885428,22881622,22879142,22884696,22879621,22879777,22885054,22879681,22884135,22883563,22881640,22880099,22879434,22881840,22884952,22880700,22882080,22884688,22879613,22883088,22878822,22879635,22878607,22885476,22883313,22879495,22880791,22878512,22879511,22878508,22879611,22882270,22885009,22881229,22880746,22881072,22881905],"score":790,"time":1586961100,"title":"What
+        Happened to Lee","type":"story","url":"https://wired.com/story/lee-holloway-devastating-decline-brilliant-young-coder/"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:42 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22884061.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:42 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '276'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"hexadec","descendants":13,"id":22884061,"kids":[22885226,22885556,22885041,22885151,22885447,22885181,22884647],"score":89,"time":1586990898,"title":"Using
+        a 1930 Teletype as a Linux Terminal [video]","type":"story","url":"https://www.youtube.com/watch?v=2XLZ4Z8LpEE&"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:43 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885819.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '224'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"pngmangi","descendants":0,"id":22885819,"score":6,"time":1587008458,"title":"The
+        most common chip you''ve never heard of","type":"story","url":"http://www.righto.com/2014/05/reverse-engineering-tl431-most-common.html"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:43 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22884510.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:44 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '311'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6Im1zb2x1amljIiwiZGVzY2VuZGFudHMiOjM0LCJpZCI6MjI4ODQ1MTAsImtpZHMiOlsyMjg4NDk4OCwyMjg4NDg3NSwyMjg4NDk0MSwyMjg4NTcxNCwyMjg4NTUyMSwyMjg4NDk0OV0sInNjb3JlIjozOCwidGltZSI6MTU4Njk5NDI1MywidGl0bGUiOiJQY2lsZWVjaCBXZWJSYWRhciDigJMgYnJvd3NlciBiYXNlZCByYWRhciBjaGVhdCBmb3IgQ1M6R08iLCJ0eXBlIjoic3RvcnkiLCJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vRW5naW5lT3duaW5nU29mdHdhcmUvcGNpbGVlY2gtd2VicmFkYXIvYmxvYi9tYXN0ZXIvcmVhZG1lLm1kIn0=
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:44 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22884831.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:45 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '393'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"waterhouse","descendants":16,"id":22884831,"kids":[22885857,22885663,22885394,22885513,22885323,22884896,22885013,22885358],"score":25,"time":1586997058,"title":"Buridan''s
+        Principle (1984) [pdf]","type":"story","url":"https://www.microsoft.com/en-us/research/publication/buridans-principle/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Flamport%2Fpubs%2Fburidan.pdf"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:45 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22878400.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '409'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"beefhash","descendants":62,"id":22878400,"kids":[22881219,22880021,22880143,22882891,22880326,22882190,22879882,22880603,22882997,22881152,22880485,22883408,22880312,22881476,22885551,22885295,22879740,22881240,22881198,22885188,22881861,22881161],"score":325,"time":1586962400,"title":"Regex2fat:
+        Turn your favorite regex into FAT32","type":"story","url":"https://github.com/8051Enthusiast/regex2fat"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:46 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22871124.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:46 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '365'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"danso","descendants":7,"id":22871124,"kids":[22883703,22884262,22884608,22884227,22885555,22885534,22884282],"score":91,"time":1586896593,"title":"Game
+        developers share what they''re most proud of making","type":"story","url":"https://www.rockpapershotgun.com/2020/04/13/developers-of-your-favourite-games-share-what-small-thing-theyre-most-proud-of-making/"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:47 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22876961.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:47 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '628'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"adunk","descendants":101,"id":22876961,"kids":[22877473,22878760,22877386,22882693,22878698,22877351,22877525,22880542,22884944,22880818,22879270,22879312,22885113,22878834,22882119,22885050,22881221,22885164,22878509,22879742,22881518,22881882,22885342,22880595,22878225,22880773,22882567,22879064,22880743,22880656,22877634],"score":989,"time":1586954072,"title":"Finland
+        adds the demoscene as a UNESCO intangible world cultural heritage","type":"story","url":"http://demoscene-the-art-of-coding.net/2020/04/15/breakthrough-finland-accepts-demoscene-on-their-national-list-of-intangible-cultural-heritage-of-humanity/"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:47 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885346.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '303'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6ImNvcmVfZHVtcGVkIiwiZGVzY2VuZGFudHMiOjcsImlkIjoyMjg4NTM0Niwia2lkcyI6WzIyODg1NzAzLDIyODg1ODExLDIyODg1ODUzLDIyODg1OTgwLDIyODg1NTkxLDIyODg1NjcxXSwic2NvcmUiOjExLCJ0aW1lIjoxNTg3MDAyNTUxLCJ0aXRsZSI6Ik15IEZpcnN0IOKAnENvbndheSdzIEdhbWUgb2YgTGlmZeKAnSBQcm9ncmFtIGluIFRyaWJ1dGUgdG8gSm9obiBDb253YXkiLCJ0eXBlIjoic3RvcnkiLCJ1cmwiOiJodHRwczovL2dpdGh1Yi5jb20vQmFya2VycHJvb2tzL2NvbndheXMtZ2FtZS1vZi1saWZlLmdpdCJ9
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:48 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885814.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '877'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"analog31","id":22885814,"kids":[22885851,22885843,22885992,22885844,22885845],"parent":22885621,"text":"Just
+        reading the headline, what this means to me is that the &quot;world economy&quot;
+        is doing a lot better than most of us are doing as individuals. I&#x27;m on
+        a 25% furlough. Sales from my side business have dropped to zero. My other
+        side job has dropped to zero. Among working people, I&#x27;m one of the lucky.
+        My family actually has a little bit of money in the kitty.<p>&quot;The economy&quot;
+        refers to a system that&#x27;s primarily designed to concentrate and protect
+        private wealth, and a 3% loss of private wealth isn&#x27;t all that bad at
+        all. The people who are really hurting have no wealth to lose.<p>I hope an
+        outcome of this crisis is that we start to think about &quot;the economy&quot;
+        in more humane terms.","time":1587008425,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:49 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885799.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '497'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJieSI6InJlZnVyYiIsImlkIjoyMjg4NTc5OSwia2lkcyI6WzIyODg1ODc3LDIyODg1ODcyLDIyODg1ODQ2LDIyODg1OTEyLDIyODg1ODgzLDIyODg1ODYwLDIyODg1ODkxXSwicGFyZW50IjoyMjg4NTYyMSwidGV4dCI6IkFzIHBlciB0aGUgdGl0bGUsIEkgZG9u4oCZdCB0aGluayBub3cgaXMgY29tcGFyYWJsZSB0byAyMDA5LjxwPkluIDIwMDksIHRoZSBlY29ub215IGNvbGxhcHNlZCBiZWNhdXNlIG9mIGJhZCBsb2Fucy4gIEluIDIwMjAsIHRoZSBlY29ub215IGlzIHNodXR0aW5nIGRvd24gYmVjYXVzZSB3ZSBzaHV0IGl0IGRvd24uPHA+VGhhdOKAmXMgc2FpZCwgb3VyIHNodXRkb3duIGNvdWxkIGNlcnRhaW5seSBzbm93YmFsbCBpbnRvIHNlcmlvdXMgaXNzdWVzIHdpdGggdGhlIGVjb25vbXkgd2hlcmUgdGhlIHByZS1leGlzdGluZyBlY29ub21pYyBhY3Rpdml0eSBkb2VzbuKAmXQgY29tZSBiYWNrLiIsInRpbWUiOjE1ODcwMDgzMjEsInR5cGUiOiJjb21tZW50In0=
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:50 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885867.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '510'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"dzdt","id":22885867,"kids":[22885931,22885888,22885963],"parent":22885621,"text":"Does
+        anyone have an explanation (preferably with source links) for why the US stock
+        market is not absolutely tanking given the depths of economic disruption?  I
+        mean I get that the government is supplying stimulus, but I don&#x27;t see
+        how that can make up for the years of rebuilding that will be ahead even after
+        we reach the bottom of the current jobs-and-small-business  freefall.","time":1587009029,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:50 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885827.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:51 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '481'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"umeshunni","id":22885827,"parent":22885621,"text":"The actual
+        report that this article is based on is here:\n<a href=\"https:&#x2F;&#x2F;www.imf.org&#x2F;en&#x2F;Publications&#x2F;WEO&#x2F;Issues&#x2F;2020&#x2F;04&#x2F;14&#x2F;weo-april-2020\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;www.imf.org&#x2F;en&#x2F;Publications&#x2F;WEO&#x2F;Issues&#x2F;2020&#x2F;04&#x2F;14&#x2F;we...</a><p>including
+        the terminology &quot;The Great Lockdown&quot;","time":1587008510,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:51 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885979.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:52 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '235'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"tempsy","id":22885979,"parent":22885621,"text":"And yet the
+        stock market is basically at late 2019 levels when everything was totally
+        fine. Incredible how disconnected it is from the economy.","time":1587010457,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:52 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885874.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:53 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '969'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"daniel-cussen","id":22885874,"kids":[22885950],"parent":22885621,"text":"As
+        I see it GDP measures national revenue, not national profit.  The closest
+        proxy to national profit has historically been net exports, which is why every
+        country wanted to export a lot but import very little.<p>Frankly, if &quot;the
+        economy&quot; falls 0.1% in a Great-Depression (as alluded to by the current
+        Democratic presidential candidate) scale catastrophe (for reference, the Great
+        Depression was more believably 25% of GDP) maybe we&#x27;ve massaged the statistics
+        too far.  So frankly, why not just gauge &quot;the economy&quot; not by GDP
+        but by estimating actual human profits of working, the money they have left
+        over after rent is paid, food is on the table, and health taken care of.  Further,
+        take into account diminishing marginal utility of surplus income. How much
+        do people have <i>left over</i> and how does that change over time?","time":1587009087,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:53 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885879.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '377'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"ForrestN","id":22885879,"parent":22885621,"text":"I was surprised
+        by this article:<p><a href=\"https:&#x2F;&#x2F;www.nytimes.com&#x2F;2020&#x2F;03&#x2F;26&#x2F;opinion&#x2F;covid-economy-unemployment-europe.html\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;www.nytimes.com&#x2F;2020&#x2F;03&#x2F;26&#x2F;opinion&#x2F;covid-economy-une...</a>","time":1587009121,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:54 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885792.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '226'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"pdq","id":22885792,"kids":[22885894],"parent":22885621,"text":"Mirror:  <a
+        href=\"http:&#x2F;&#x2F;archive.is&#x2F;YfPVL\" rel=\"nofollow\">http:&#x2F;&#x2F;archive.is&#x2F;YfPVL</a>","time":1587008263,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:54 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885765.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:55 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '133'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"icedchai","id":22885765,"kids":[22885775],"parent":22885621,"text":"3%
+        sounds optimistic.","time":1587007895,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:55 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885969.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '157'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"yalogin","id":22885969,"parent":22885621,"text":"How does this
+        gel with the current stock market surge in the US?","time":1587010308,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:56 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885871.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '413'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"adelHBN","id":22885871,"kids":[22885882],"parent":22885621,"text":"One
+        of the issues of such a contraction is its impact on stocks. People often
+        think it&#x27;s just for the rich. It&#x27;s not! Think of all the teachers,
+        firefighters, nurses, police - all those first responders whose pensions are
+        invested in stocks. Such contraction will terrible for their eggnests.","time":1587009060,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:57 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885852.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '163'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"bravoetch","id":22885852,"parent":22885621,"text":"Is there
+        a reason we think this is even a good metric to strive for?","time":1587008940,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:58 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885855.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:58 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '157'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"UncleOxidant","id":22885855,"kids":[22885896],"parent":22885621,"text":"A
+        3% contraction seems really optimistic.","time":1587008959,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:58 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885791.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:21:59 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '463'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"lalaland1125","id":22885791,"kids":[22885824],"parent":22885621,"text":"In
+        case anyone is having issues with the paywall, <a href=\"https:&#x2F;&#x2F;github.com&#x2F;iamadamdev&#x2F;bypass-paywalls-firefox\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;github.com&#x2F;iamadamdev&#x2F;bypass-paywalls-firefox</a>
+        seems to work well for me.<p>(Note: I am not affiliated in any way with that
+        extension. I&#x27;m just a happy user.)","time":1587008243,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:21:59 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885836.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:22:00 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '129'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"kart23","id":22885836,"kids":[22885901],"parent":22885621,"text":"Start
+        buying stock.","time":1587008647,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:22:00 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885947.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:22:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1209'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"nl","id":22885947,"parent":22885621,"text":"Does anyone know
+        what the &quot;3% contraction&quot; is actually referring to? The IMF report[1]
+        it is based on says GDP, but world GDP contracted 1.9% during the great recession[2],
+        so that doesn&#x27;t make much sense.<p>Also, looking at their calculations
+        they have &quot;advanced economies&quot; (basically US, Europe, UK, Japan
+        etc) forecast to contract 6.1%, India expand 1.2% and China 1.0%, ASEAN expans
+        1.9% and everything else shrink. That can&#x27;t possibly make a 3% contraction
+        (if 2&#x2F;3rds of the world&#x27;s economy shrinks 6%, then 1&#x2F;3rd can&#x27;t
+        make it up by expanding 1.5%!).<p>[1] <a href=\"https:&#x2F;&#x2F;www.imf.org&#x2F;en&#x2F;Publications&#x2F;WEO&#x2F;Issues&#x2F;2020&#x2F;04&#x2F;14&#x2F;weo-april-2020\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;www.imf.org&#x2F;en&#x2F;Publications&#x2F;WEO&#x2F;Issues&#x2F;2020&#x2F;04&#x2F;14&#x2F;we...</a><p>[2]
+        <a href=\"https:&#x2F;&#x2F;data.worldbank.org&#x2F;indicator&#x2F;NY.GDP.MKTP.KD.ZG?end=2009&amp;locations=1W&amp;start=2005\"
+        rel=\"nofollow\">https:&#x2F;&#x2F;data.worldbank.org&#x2F;indicator&#x2F;NY.GDP.MKTP.KD.ZG?end=2...</a>","time":1587010049,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:22:01 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885748.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:22:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '158'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"jsf01","id":22885748,"kids":[22885768,22885826],"parent":22885621,"text":"Does
+        anyone have a non-paywalled mirror?","time":1587007718,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:22:02 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885749.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:22:03 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '127'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"awejkljsdzc","dead":true,"id":22885749,"parent":22885621,"text":"#RecallGavinNewsom","time":1587007721,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:22:03 GMT
+- request:
+    method: get
+    uri: https://hacker-news.firebaseio.com/v0/item/22885787.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - hn_api gem 0.0.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 16 Apr 2020 04:22:04 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '248'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31556926; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: '{"by":"xwdv","id":22885787,"kids":[22885816,22885815,22885802],"parent":22885621,"text":"It
+        is easier to make a fast fortune when the economy contracts compared to when
+        it expands, if you have prepared properly.","time":1587008193,"type":"comment"}'
+    http_version: null
+  recorded_at: Thu, 16 Apr 2020 04:22:04 GMT
+recorded_with: VCR 5.1.0

@@ -1,0 +1,51 @@
+<% v = local_assigns[:v] || false %>
+
+<section class="section">
+  <h2 class="title is-5 hns-top-stories-title"><%= title %></h2>
+
+  <div class="box" v-for="<%= 'story in stories' if v  %>">
+    <article>
+      <div class="content">
+        <h3 class="subtitle is-6" v-html="<%= 'story.title' if v %>">
+          <a :href="<%= 'story.url'  %>">
+            <%= story.title %>
+          </a>
+        </h3>
+        <%= t('.by') %>
+        <small>
+          <a href="#" v-html="<%= 'story.by' if v %>">
+            <%= story.by %>
+          </a>
+          <%= t('.at') %>
+          <span v-html="<%= 'story.time' if v %>">
+            <%= story.time %>
+          </span>
+        </small>
+        <br>
+        <br>
+        <% unless v %>
+          <strong v-html="<%= 'story.comments_count' if v %>">
+            <%= t('.comments', count: story.comments_count) %>
+          </strong>
+          <br>
+          <%= link_to story.comments_url do %>
+            + <%= t('.show_relevant_comments') %>
+          <% end %>
+        <% end %>
+        <br>
+        <div class="content">
+          <% story.most_relevant_comments.each do |comment| %>
+            <%= t('.by') %>
+            <small>
+              <a href="#"><%= comment.by %></a>
+            </small>
+            <%= t('.at') %>
+            <small><%= l Time.at(comment.time) %></small>
+
+            <p><%= raw comment.text %></p>
+          <% end %>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>

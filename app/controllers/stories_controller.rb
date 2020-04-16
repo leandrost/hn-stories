@@ -2,45 +2,30 @@
 
 class StoriesController < ApplicationController
   def index
-    @stories = []
-
     if searching?
-      search_job = SearchStoryJob.perform_later(term: query_params[:q])
-      @search_id = search_job.job_id
-      return
-    end
-
-    @stories = list_stories
-
-    @stories.each do |story|
-      story.comments = []
-      next unless show_comments?(story.id)
-
-      comments = HackerNews::FetchMostRelevantComments.call(
-        ids: story.kids
-      )
-
-      next if comments.blank?
-
-      story.comments = comments
+      search_stories
+    else
+      list_top_stories
     end
   end
 
   private
 
-  attr_reader :stories
-
-  def list_stories
-
-    HackerNews::FetchTopStories.call
-  end
-
   def searching?
     query_params[:q].present?
   end
 
-  def show_comments?(story_id)
-    query_params[:show_comments].try(:to_i) == story_id
+  def list_top_stories
+    @stories = ListTopStories.call(
+      comment_for: query_params[:show_comments]
+    )
+  end
+
+  def search_stories
+    SearchStoryJob.perform_later(term: query_params[:q]).tap do |search_job|
+      @search_id = search_job.job_id
+      @stories = []
+    end
   end
 
   def query_params

@@ -5,7 +5,8 @@ class SearchStoryJob < ApplicationJob
 
   def perform(term:)
     HackerNews::SearchStories.call(term: term) do |story|
-      ActionCable.server.broadcast(broadcasting, story.to_json)
+      json = StoryPresenter.new(story).to_json
+      ActionCable.server.broadcast(broadcasting, json)
     end
   end
 
