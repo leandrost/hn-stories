@@ -11,3 +11,20 @@
 .hns-top-stories-title {
   color: $orange;
 }
+
+.hn-story-title.subtitle:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.hn-story-comment-link {
+  color: $orange;
+  font-weight: bold;
+}
+
+.hn-story-comments-section {
+  margin-top: 1.5rem;
+}
+
+.hn-story-comment-author {
+  color: $grey-darker;
+}

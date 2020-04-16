@@ -41,6 +41,13 @@ describe StoryPresenter, type: :presenter do
     end
   end
 
+  describe '#url' do
+    it 'is empty if nil' do
+      object.url = nil
+      expect(presenter.url).to be_empty
+    end
+  end
+
   describe '#to_json' do
     it 'serializes to json' do
       object.id = 42

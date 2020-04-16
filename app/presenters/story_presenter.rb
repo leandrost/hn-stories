@@ -20,8 +20,12 @@ class StoryPresenter < SimpleDelegator
     url_helpers.stories_path(show_comments: id)
   end
 
+  def url
+    object.url.to_s
+  end
+
   def to_hash
-    super.merge(
+    object.to_h.merge(
       time: time,
       comments_url: comments_url,
       most_relevant_comments: most_relevant_comments,

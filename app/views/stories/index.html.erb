@@ -11,16 +11,6 @@
   <% end %>
 </section>
 
-<% if @search_id  %>
-<hn-search-results :id="<%= @search_id.to_json %>" inline-template>
-  <div>
-    <%= render 'story', title: t('.searching', term: params[:q]), story: OpenStruct.new(most_relevant_comments: []), v: true %>
-  </div>
-</hn-search-results>
-<% end %>
-
-<div class="content">
-  <% @stories.each do |story| %>
-  <%= render 'story', story: story, title: t('.title')  %>
-  <% end %>
-</div>
+<section class="section">
+  <%= render @stories.any? ? 'top_stories' : 'search' %>
+</section>

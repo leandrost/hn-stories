@@ -1,0 +1,7 @@
+<h2 class="title is-5 hns-top-stories-title"><%= t('.title', term: params[:q]) %></h2>
+
+<hn-search-results :stories="<%= [].to_json %>" :id="<%= @search_id.to_json %>" inline-template>
+  <div>
+    <%= render 'story', story: OpenStruct.new(most_relevant_comments: []), v: true %>
+  </div>
+</hn-search-results>

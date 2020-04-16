@@ -34,15 +34,18 @@ en:
     index:
       search_stories: "Search stories..."
 
+    top_stories:
       title:  "Top 15 Hacker News"
-      searching: "Searching for:  %{term}"
+
+    search:
+      title: "Searching for: %{term}"
 
     story:
       at: "at"
       by: "by"
 
-      show_relevant_comments: "Show relevant comments"
-      hide_relevant_comments: "Hide relevant comments"
+      show_relevant_comments: "show relevant comments"
+      hide_relevant_comments: "hide relevant comments"
 
   presenters:
     story:
